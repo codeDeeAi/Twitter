@@ -1,0 +1,334 @@
+/* -----DEFAULTS----- */
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-family: helvetica, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.row{
+    width: 100%;
+    display: flex;
+}
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.32%;
+}
+.col-5{
+    width: 41.65%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.64%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.3%;
+}
+.col-11{
+    width: 91.63%;
+}
+h1{
+    font-size: 28px;
+}
+h4{
+    font-size: 14px;
+}
+.main-blue{
+    background: #00ACEE;
+}
+.main-white{
+    background: #FFFFFF;
+}
+.font-white{
+    color: #FFFFFF;
+}
+.font-main{
+    color: #00ACEE;
+}
+
+
+/* -----STYLES--- */
+.navright{
+    padding-top: 8px;
+}
+
+.top{
+    width: 90%;
+    margin: auto;
+}
+.topadjust{
+    margin: auto;
+    margin-top: 8px;
+}
+.twithead{
+    padding: 3px 0  0 5px;
+}
+header h1{
+    font-weight: bolder;
+    color: black;
+}
+.top h4{
+    font-weight: bold;
+    color: black;
+}
+.middle{
+    background-image: url(../asset/images/twitter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10% 0;
+    
+}
+.middle span{
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-left: 5px; 
+}
+
+.middle ul{
+    list-style: none;
+    margin: auto;
+}
+.middle ul li{
+    margin-top: 10px;
+}
+
+.end{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    display: inline-flex;
+    margin: auto;
+}
+.end ul{
+    display: inline-flex;
+    list-style: none;
+}
+.end-div-lit ul li{
+    margin:auto;
+    padding: 2px;
+    padding-right: auto;
+}
+.end-div{
+    margin: auto;
+    display: inline-flex;
+}
+.end a{
+    text-decoration: none;
+    color: black;
+}
+.end-div-lit{
+    margin: auto;
+    display: inline-flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+}
+.end-div-lit ul{
+    list-style: none;
+}
+.end-div-lit a{
+    text-decoration: none;
+    color: black;
+}
+.end-div-lit a:hover{
+    text-decoration: none;
+    color: black;
+    pointer-events: painted;
+    text-decoration: underline;
+}
+.foot_1, .foot_2, .foot_3{
+    display: inline-flex;
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+}
+/* --BUTTONS--- */
+.nav-btn{
+    float: right;
+    width: 40%;
+}
+.top-signup, .last-signup{
+    background:  #00ACEE;
+    display: block;
+    margin: auto;
+    padding: 8px 0px;
+    border: 0.5px solid #00ACEE;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.top-login, .last-login{
+    background:  #FFFFFF;
+    display: block;
+    margin: auto;
+    padding: 8px 0px;
+    border: 0.5px solid #00ACEE;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.last-signup, .last-login{
+    margin-top: 25px;
+}
+
+
+/* -----Media Queries */
+
+/* -----small screen sizes <=600px */
+@media screen and (max-width:600px){
+    .foot_1, .foot_2, .foot_3{
+        width: 80%;
+        margin: auto;
+    }     
+    .end-div-lit{
+    display: block;
+    font-size: 12px;
+    }
+    .midadjust ul li{
+        margin-bottom: 40px;
+    }
+    .topadjust{
+        padding: 15% 0 15% 0;
+    }
+    .midadjust{
+        padding: 10% 0 10% 0;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+/* -----screen sizes >=600px to <=1000px */
+@media screen and (min-width: 600px) and (max-width: 1000px){
+    .top{
+        width: 50%;
+        float: right;
+    }
+    .middle{
+        width: 50%;
+        float: left;
+    }
+    
+    .end, footer{
+        width: 100%;
+    }
+    .last{
+        display: none;
+    }
+
+    .topadjust{
+        width: 70%;
+        display: block;
+        margin: auto;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        padding: 15% 0 15% 0;
+    }
+    .midadjust{
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 20%;
+        padding: 15% 0 15% 0;
+
+    }
+    .midadjust ul li{
+        margin-bottom: 30px;
+    }
+    .top h4{
+        margin-top: 8%;
+    }
+    .end-div-lit ul li{
+        margin: auto;
+        padding: 2px;
+        padding-right: auto;
+    }
+    .foot_1, .foot_2, .foot_3{
+        width: 80%;
+        margin: auto;
+    }
+   
+    .end-div-lit{
+        display: block;
+        font-size: 14px;
+    }
+    .nav-btn{
+        width: 70%;
+    }
+}
+/* ---for screen sizes >= 1000px */
+@media screen and (min-width: 1000px){
+    .top{
+        width: 50%;
+        float: right;
+    }
+    .middle{
+        width: 50%;
+        float: left;
+    }
+    .end, footer{
+        width: 100%;
+    }
+    .last{
+        display: none;
+    }
+
+    .topadjust{
+        width: 70%;
+        display: block;
+        margin: auto;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        padding: 15% 0 15% 0;
+    }
+    .midadjust{
+        width: 70%;
+        display: block;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 20%;
+        padding: 15% 0 15% 0;
+    }
+    .midadjust ul li{
+        margin-bottom: 30px;
+    }
+    .top h4{
+        margin-top: 8%;
+    }
+    .end-div-lit{
+        margin: auto;
+        width: 100%;
+        font-size: 14px;
+    }
+    .end-div-lit ul{
+        padding: auto;
+    }
+    .ulEnd{
+        width: 100%;
+    }
+    footer{
+        font-size: 14px;
+    }
+    .foot_1{
+        width: 38%;
+    } 
+    .foot_2, .foot_3{
+        width: 30%;
+    }
+}
